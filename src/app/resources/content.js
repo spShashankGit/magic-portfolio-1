@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Shashank',
+    lastName: 'Pandey',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role: 'Photographer & Solutions Architect',
+    avatar: '/images/Profile.jpeg',
+    location: 'Europe/Vienna',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Deutsch']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,22 +24,17 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/spShashankGit',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
-    },
-    {
-        name: 'X',
-        icon: 'x',
-        link: '',
+        link: 'https://www.linkedin.com/in/spshashank',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:pandey.shashank3006@gmail.com',
     },
 ]
 
@@ -47,8 +42,9 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Solutions Architect, Senior Developer and Photographer</>,
+    subline: <>My name is Shashank, working as a Solutions Architect with almost a decade of development experience.
+        After hour I work on .</>
 }
 
 const about = {
@@ -100,7 +96,7 @@ const about = {
                     <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
                     <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
                 ],
-                images: [ ]
+                images: []
             }
         ]
     },
@@ -178,73 +174,73 @@ const gallery = {
     description: `A photo collection by ${person.name}`,
     // Images from https://pexels.com
     images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
+        {
+            src: '/images/gallery/img-01.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-02.jpg', 
+        {
+            src: '/images/gallery/img-02.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-03.jpg', 
+        {
+            src: '/images/gallery/img-03.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-04.jpg', 
+        {
+            src: '/images/gallery/img-04.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-05.jpg', 
+        {
+            src: '/images/gallery/img-05.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-06.jpg', 
+        {
+            src: '/images/gallery/img-06.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-07.jpg', 
+        {
+            src: '/images/gallery/img-07.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-08.jpg', 
+        {
+            src: '/images/gallery/img-08.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-09.jpg', 
+        {
+            src: '/images/gallery/img-09.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-10.jpg', 
+        {
+            src: '/images/gallery/img-10.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-11.jpg', 
+        {
+            src: '/images/gallery/img-11.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-12.jpg', 
+        {
+            src: '/images/gallery/img-12.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-13.jpg', 
+        {
+            src: '/images/gallery/img-13.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-14.jpg', 
+        {
+            src: '/images/gallery/img-14.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
