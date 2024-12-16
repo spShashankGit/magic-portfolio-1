@@ -102,6 +102,7 @@ export default function About(
                 mobileDirection="column" justifyContent="center">
                 {about.avatar.display && (
                     <Flex
+                        className={styles.avatar}
                         minWidth="160" paddingX="l" paddingBottom="xl" gap="m"
                         flex={3} direction="column" alignItems="center">
                         <Avatar
@@ -340,7 +341,7 @@ export default function About(
                                             onBackground="neutral-weak">
                                             {skill.description}
                                         </Text>
-                                        {skill.images.length > 0 && (
+                                        {skill.images && skill.images.length > 0 && (
                                             <Flex
                                                 fillWidth paddingTop="m" gap="12"
                                                 wrap>

@@ -1,3 +1,4 @@
+import ScrollToHash from '@/components/ScrollToHash';
 import { notFound } from 'next/navigation'
 import { CustomMDX } from '@/components/mdx'
 import { getPosts } from '@/app/utils/utils'
@@ -20,7 +21,7 @@ export async function generateStaticParams() {
 	const locales = routing.locales;
     
     // Create an array to store all posts from all locales
-    const allPosts = [];
+    const allPosts: { slug: string; locale: string }[] = [];
 
     // Fetch posts for each locale
     for (const locale of locales) {
@@ -144,6 +145,7 @@ export default function Blog({ params }: BlogParams) {
 				fillWidth>
 				<CustomMDX source={post.content} />
 			</Flex>
+			<ScrollToHash />
 		</Flex>
 	)
 }

@@ -7,6 +7,7 @@ import { routing } from '@/i18n/routing';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { formatDate } from '@/app/utils/formatDate';
+import ScrollToHash from '@/components/ScrollToHash';
 
 interface WorkParams {
     params: {
@@ -15,11 +16,11 @@ interface WorkParams {
     };
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ slug: string; locale: string }[]> {
 	const locales = routing.locales;
     
     // Create an array to store all posts from all locales
-    const allPosts = [];
+    const allPosts: { slug: string; locale: string }[] = [];
 
     // Fetch posts for each locale
     for (const locale of locales) {
@@ -163,6 +164,7 @@ export default function Project({ params }: WorkParams) {
 				</Flex>
 				<CustomMDX source={post.content} />
 			</Flex>
+			<ScrollToHash />
 		</Flex>
 	)
 }
